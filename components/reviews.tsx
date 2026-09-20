@@ -76,12 +76,11 @@ export function Reviews() {
                 REAL REVIEWS
               </p>
               <h2 className="mt-3 text-[26px] font-extrabold tracking-tight md:text-[36px]">
-                믿기 어려운 업계에서, 먼저 믿음을 드린 이야기
+                고객들이 이렇게 말합니다
               </h2>
               <p className="mt-4 max-w-2xl text-[14px] leading-relaxed text-white/60">
-                건설업 사장님들은 누구나 압니다. &quot;다들 자기가 잘한다고
-                한다.&quot; 그래서 저희는 말 대신 과정을 보여드립니다. 실제
-                상담·진행 유형을 바탕으로 정리한 고객들의 목소리입니다.
+                다들 자기가 잘한다고 합니다. 그래서 저희 말 대신, 실제로
+                맡기셨던 분들이 남긴 이야기를 그대로 옮깁니다.
               </p>
             </div>
             <p className="hidden text-[12px] font-bold tracking-[0.15em] text-white/40 lg:block">
