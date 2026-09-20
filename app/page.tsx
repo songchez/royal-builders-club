@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -88,12 +87,11 @@ export default function Home() {
     <>
       {/* ── Hero ──────────────────────────────── */}
       <section className="relative overflow-hidden bg-navy-deep text-white">
-        <Image
-          src="/images/hero-city.jpg"
+        <img
+          src="/images/hero-city.webp"
           alt="도심 속 유리 타워와 거리 전경"
-          fill
-          priority
-          className="object-cover opacity-55"
+          className="absolute inset-0 h-full w-full object-cover opacity-55"
+          fetchPriority="high"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-navy-deep via-navy-deep/90 to-navy-deep/45" />
         <div className="relative mx-auto max-w-7xl px-4 pb-20 pt-24 md:px-6 md:pb-28 md:pt-36">
@@ -202,11 +200,10 @@ export default function Home() {
       <section className="border-y border-border bg-card">
         <div className="mx-auto grid max-w-7xl gap-0 px-4 md:px-6 lg:grid-cols-[1.05fr_1fr]">
           <div className="relative min-h-[320px] overflow-hidden lg:min-h-0">
-            <Image
-              src="/images/hero-meeting.jpg"
-              alt="전문가와 고객사가 함께 검토하는 자문 미팅"
-              fill
-              className="object-cover"
+            <img
+              src="/images/community-table.webp"
+              alt="도면과 서류를 함께 검토하는 자문 미팅"
+              className="absolute inset-0 h-full w-full object-cover"
             />
           </div>
           <div className="px-0 py-14 md:py-20 lg:pl-14">
@@ -309,11 +306,9 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-20 md:px-6 md:py-28 lg:grid-cols-[1fr_1.15fr]">
           <Reveal>
             <div className="relative overflow-hidden border border-border">
-              <Image
-                src="/images/expert-desk.jpg"
+              <img
+                src="/images/expert-desk.webp"
                 alt="서류를 검토하는 전문가의 책상"
-                width={720}
-                height={640}
                 className="h-full w-full object-cover"
               />
             </div>
