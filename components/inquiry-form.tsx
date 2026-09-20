@@ -89,7 +89,7 @@ export function InquiryForm() {
         주제를 고르고 상황을 남겨주시면, 17년 경력 전문가가 직접 답합니다.
       </p>
 
-      <div className="mt-5 grid grid-cols-2 gap-2.5 lg:grid-cols-5">
+      <div className="mt-5 flex flex-col gap-2">
         {TOPICS.map((t) => {
           const active = topic === t.id;
           return (
@@ -97,20 +97,16 @@ export function InquiryForm() {
               key={t.id}
               type="button"
               onClick={() => setTopic(t.id)}
-              className={`border p-4 text-left transition-colors ${
+              className={`flex w-full items-center gap-4 border px-5 py-3.5 text-left transition-colors ${
                 active
                   ? "border-primary bg-primary text-primary-foreground"
                   : "border-border bg-background hover:border-primary/40"
               }`}
             >
-              <t.icon
-                className={`h-5 w-5 ${active ? "text-brass" : "text-brass"}`}
-              />
-              <span className="mt-2 block text-[13.5px] font-bold">
-                {t.label}
-              </span>
+              <t.icon className="h-5 w-5 shrink-0 text-brass" />
+              <span className="text-[14px] font-bold">{t.label}</span>
               <span
-                className={`mt-0.5 block text-[11px] ${
+                className={`ml-auto hidden text-[11.5px] sm:block ${
                   active ? "text-primary-foreground/70" : "text-muted-foreground"
                 }`}
               >

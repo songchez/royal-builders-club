@@ -333,7 +333,7 @@ export default function Home() {
                 EXPERT DESK
               </p>
               <h2 className="font-display mt-3 text-[26px] font-black tracking-tight md:text-[34px]">
-                지금 상황, 편하게 물어보세요
+                17년 경력 전문가에게 바로 물어보세요
               </h2>
               <p className="mt-3 text-[14px] leading-relaxed text-muted-foreground">
                 면허 설립 · 기업진단 · 연말 잔고 · 기능사 자격. 무엇이든
