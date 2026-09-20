@@ -40,7 +40,7 @@ git push -u origin main
 | Build output | (자동 — wrangler.jsonc가 지정) |
 
 4. 환경 변수(Settings → Environment variables):
-   - `NODE_VERSION` = `20`
+   - `NODE_VERSION` = `22`
    - (선택) `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS`, `INQUIRY_TO`
      — Workers는 소켓 SMTP를 지원하지 않으므로, 메일 발송은 추후
      Resend/MailChannels 등 HTTP 기반 API로 교체 권장(코드 교체 지점: `app/api/inquiry/route.ts`)
