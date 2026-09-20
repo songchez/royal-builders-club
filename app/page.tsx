@@ -102,13 +102,13 @@ export default function Home() {
               건설 행정 · 경영 자문 | 실무 17년
             </p>
             <h1 className="anim-fade-up anim-delay-1 font-display mt-6 text-[34px] font-black leading-[1.28] tracking-tight md:text-[54px]">
-              반려될 서류는,
+              결정하기 전에,
               <br />
-              내기 전에 압니다
+              17년 실무와 상의하세요
             </h1>
             <p className="anim-fade-up anim-delay-2 mt-6 max-w-2xl text-[15px] leading-relaxed text-white/75 md:text-[17px]">
-              면허 등록 · 기업진단 · 양도양수 · 연말결산. 17년 현장에서 같은
-              일을 반복해 온 실무 담당자가, 처음부터 끝까지 맡습니다.
+              면허를 세울지, 법인을 넘길지, 연말을 어떻게 넘길지. 17년
+              현장에서 답해 온 실무 담당자가 처음부터 끝까지 맡습니다.
             </p>
             <div className="anim-fade-up anim-delay-3 mt-10 flex flex-col gap-3 sm:flex-row">
               <Button size="lg" className="h-13 bg-brass px-9 text-[16px] text-navy-deep hover:bg-brass/85" asChild>
