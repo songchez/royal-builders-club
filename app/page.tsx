@@ -69,7 +69,7 @@ const STEPS = [
   {
     no: "01",
     title: "문의 접수",
-    desc: "상황을 메일로 보내주세요. 영업일 하루 안에 실무 담당자가 직접 답합니다.",
+    desc: "상황을 메일로 보내주세요. 영업일 하루 안에 담당 전문가가 직접 답합니다.",
   },
   {
     no: "02",
@@ -99,16 +99,16 @@ export default function Home() {
         <div className="relative mx-auto max-w-7xl px-4 pb-20 pt-24 md:px-6 md:pb-28 md:pt-36">
           <div className="max-w-3xl">
             <p className="anim-fade-up text-[12px] font-bold tracking-[0.22em] text-brass">
-              건설 행정 · 경영 자문 | 실무 17년
+              건설 행정 · 경영 자문 | 17년 경력 전문가
             </p>
             <h1 className="anim-fade-up anim-delay-1 font-display mt-6 text-[34px] font-black leading-[1.28] tracking-tight md:text-[54px]">
               결정하기 전에,
               <br />
-              17년 실무와 상의하세요
+              17년 경력 전문가와 상의하세요
             </h1>
             <p className="anim-fade-up anim-delay-2 mt-6 max-w-2xl text-[15px] leading-relaxed text-white/75 md:text-[17px]">
               면허를 세울지, 법인을 넘길지, 연말을 어떻게 넘길지. 17년
-              현장에서 답해 온 실무 담당자가 처음부터 끝까지 맡습니다.
+              현장에서 답해 온 전문가가 처음부터 끝까지 맡습니다.
             </p>
             <div className="anim-fade-up anim-delay-3 mt-10 flex flex-col gap-3 sm:flex-row">
               <Button size="lg" className="h-13 bg-brass px-9 text-[16px] text-navy-deep hover:bg-brass/85" asChild>
@@ -131,7 +131,7 @@ export default function Home() {
         <div className="relative border-t border-white/10 bg-navy/70 backdrop-blur">
           <div className="mx-auto grid max-w-7xl grid-cols-2 divide-x divide-white/10 md:grid-cols-4">
             {[
-              { n: 17, suffix: "년", label: "한 분야만 한 실무" },
+              { n: 17, suffix: "년", label: "한 분야만 해온 경력" },
               { n: 6, suffix: "개", label: "자문 영역" },
               { n: 25, suffix: "종", label: "면허 기준표 공개" },
               { n: 1, suffix: "일", label: "영업일 내 회신" },
@@ -311,7 +311,7 @@ export default function Home() {
             <div className="relative overflow-hidden border border-border">
               <Image
                 src="/images/expert-desk.jpg"
-                alt="서류를 검토하는 실무 담당자의 책상"
+                alt="서류를 검토하는 전문가의 책상"
                 width={720}
                 height={640}
                 className="h-full w-full object-cover"
@@ -319,7 +319,7 @@ export default function Home() {
             </div>
             <div className="mt-6 border-l-4 border-brass bg-card p-6">
               <p className="text-[16px] font-extrabold">
-                실무 담당자가 직접 답합니다
+                17년 경력 전문가가 직접 답합니다
               </p>
               <p className="mt-2 text-[13.5px] leading-relaxed text-muted-foreground">
                 17년 동안 등록 · 진단 · 양도 현장을 지킨 사람이 봅니다. 간단한

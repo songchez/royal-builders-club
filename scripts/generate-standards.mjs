@@ -10,6 +10,7 @@ import path from "path";
 const OUT = path.join(process.cwd(), "content", "standards");
 rmSync(OUT, { recursive: true, force: true });
 mkdirSync(OUT, { recursive: true });
+const jsonDocs = [];
 
 const UPDATED = "2026-09-20";
 
@@ -569,6 +570,25 @@ for (const d of docs) {
     .join("\n");
 
   writeFileSync(path.join(OUT, `${d.slug}.md`), fm + "\n\n" + d.body + "\n", "utf-8");
+  jsonDocs.push({
+    slug: d.slug,
+    group: d.group,
+    name: d.name,
+    capitalCorp: d.fm.capitalCorp,
+    ...(d.fm.capitalPersonal ? { capitalPersonal: d.fm.capitalPersonal } : {}),
+    coop: d.fm.coop,
+    tech: d.fm.tech,
+    office: d.fm.office,
+    updated: UPDATED,
+    source: d.source,
+    body: d.body,
+  });
 }
 
-console.log(`✅ ${docs.length}개 등록기준 문서 생성 완료 → content/standards/`);
+writeFileSync(
+  path.join(process.cwd(), "content", "standards.json"),
+  JSON.stringify(jsonDocs, null, 2),
+  "utf-8"
+);
+
+console.log(`✅ ${docs.length}개 등록기준 문서 생성 완료 → content/standards/ + standards.json`);
