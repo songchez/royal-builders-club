@@ -102,9 +102,9 @@ export default function Home() {
               건설 행정 · 경영 자문 | 17년 경력 전문가
             </p>
             <h1 className="anim-fade-up anim-delay-1 font-display mt-6 text-[34px] font-black leading-[1.28] tracking-tight md:text-[54px]">
-              결정하기 전에,
+              건설사의 모든 결정에,
               <br />
-              17년 경력 전문가와 상의하세요
+              17년 경력 전문가가 함께합니다
             </h1>
             <p className="anim-fade-up anim-delay-2 mt-6 max-w-2xl text-[15px] leading-relaxed text-white/75 md:text-[17px]">
               면허를 세울지, 법인을 넘길지, 연말을 어떻게 넘길지. 17년
