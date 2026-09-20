@@ -89,13 +89,13 @@ export default function Home() {
       {/* ── Hero ──────────────────────────────── */}
       <section className="relative overflow-hidden bg-navy-deep text-white">
         <Image
-          src="/images/hero-site.jpg"
-          alt="도시 건설 현장"
+          src="/images/hero-meeting.jpg"
+          alt="건설 경영 전문가들의 비즈니스 미팅"
           fill
           priority
-          className="object-cover opacity-40"
+          className="object-cover opacity-55"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy-deep via-navy-deep/85 to-navy-deep/30" />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy-deep via-navy-deep/90 to-navy-deep/45" />
         <div className="relative mx-auto max-w-7xl px-4 pb-20 pt-24 md:px-6 md:pb-28 md:pt-36">
           <div className="max-w-3xl">
             <p className="anim-fade-up text-[12px] font-bold tracking-[0.22em] text-brass">

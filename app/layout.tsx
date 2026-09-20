@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
-import { Noto_Serif_KR } from "next/font/google";
 import "./globals.css";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
@@ -12,12 +11,6 @@ const pretendard = localFont({
   variable: "--font-sans",
   display: "swap",
   weight: "45 920",
-});
-
-const notoSerifKr = Noto_Serif_KR({
-  variable: "--font-display",
-  display: "swap",
-  weight: ["600", "700", "900"],
 });
 
 export const metadata: Metadata = {
@@ -55,7 +48,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="ko" className={`${pretendard.variable} ${notoSerifKr.variable}`}>
+    <html lang="ko" className={pretendard.variable}>
       <body className="min-h-screen bg-background font-sans text-foreground antialiased tabular-nums">
         <SiteHeader />
         <main className="pb-16 md:pb-0">{children}</main>
