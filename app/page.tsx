@@ -89,8 +89,8 @@ export default function Home() {
       {/* ── Hero ──────────────────────────────── */}
       <section className="relative overflow-hidden bg-navy-deep text-white">
         <Image
-          src="/images/hero-meeting.jpg"
-          alt="건설 경영 전문가들의 비즈니스 미팅"
+          src="/images/hero-city.jpg"
+          alt="도심 속 유리 타워와 거리 전경"
           fill
           priority
           className="object-cover opacity-55"
@@ -203,8 +203,8 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl gap-0 px-4 md:px-6 lg:grid-cols-[1.05fr_1fr]">
           <div className="relative min-h-[320px] overflow-hidden lg:min-h-0">
             <Image
-              src="/images/community-table.jpg"
-              alt="도면과 서류를 함께 검토하는 자문 미팅"
+              src="/images/hero-meeting.jpg"
+              alt="전문가와 고객사가 함께 검토하는 자문 미팅"
               fill
               className="object-cover"
             />
